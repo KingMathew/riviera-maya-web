@@ -1,0 +1,176 @@
+        /* define el tipo de letra y un color de fondo para todas las páginas */
+        
+        body {
+            font-family: cursive;
+            background: #00BFFF;
+        }
+        /* Tipo de letra y color para titulos h1 */
+        
+        h1 {
+            font-family: cursive;
+            color: #0000CD;
+            background-color: #00BFFF;
+            text-align: center
+        }
+        
+        header {
+            text-align: center;
+            /*  centra el texto  */
+        }
+        /* Tipo de letra y color para titulos h2*/
+        
+        h2 {
+            font-family: cursive;
+            color: #000080;
+        }
+        /* Tipo de letra y color para titulos h3*/
+        
+        h3 {
+            font-family: cursive;
+            color: #109985;
+        }
+        /* Para configurar el menú y que quede horizontal*/
+        
+        .menu {
+            /* Personalización del menú color, tamaño, margen, posición*/
+            list-style: none;
+            /* suprime los puntos de la lista*/
+            padding: 0;
+            background: #7FFFD4;
+            width: 90%;
+            /* ancho del menu*/
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        a:link {
+            font-size: 20px;
+            /*Definimos el estilo que vamos a usar en nuestros links*/
+            color: #008000;
+        }
+        
+        a:hover {
+            /*Cuando pasemos el mouse por encima del link, este va a cambiar de color */
+            color: #F0FFF0;
+        }
+        
+        .menua {
+            /*Decimos cuales son las caracteristicas de nuestra barra de navegación */
+            background-color: #FFFAFA;
+            overflow: hidden;
+        }
+        
+        .menua {
+            /*Declaramos las características de nuestros links que se van a encontrar dentro de la barra de navegación*/
+            float: left;
+            display: block;
+            font-family: cursive;
+            font-weight: bold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            padding: 20px;
+            /* Separa los botones*/
+            display: block;
+        }
+        
+        .menu li {
+            display: inline-block;
+            /*los elementos de lista se organizan de forma horizontal*/
+            text-align: center;
+        }
+        
+        .contenido {
+            position: relative;
+            background-color: #FFFAFA;
+            margin-left: 10%;
+            /*Usamos margenes en nuestro contenido para que se pueda ver el fondo, además usamos porcentajes para que sea un diseño responsivo*/
+            margin-right: 10%;
+            font-size: 20px;
+            font-family: cursive;
+            text-align: justify;
+            padding: 20px;
+        }
+        
+        .center {
+            /*Definimos el estilo center, que vamos a usar para centrar imagenes*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            /*Usamos porcentajes para que el diseño sea responsivo*/
+        }
+        
+        .iframe-container {
+            /*Es dada al momento de insertar videos de Youtube*/
+            position: relative;
+            width: 100%;
+            padding-bottom: 46.25%;
+            height: 0;
+        }
+        
+        .footer {
+            /*personalización del pie de pagina*/
+            background: #7FFFD4;
+            /*color del pie de pagina */
+            color: cadetblue;
+            padding: 1rem 0;
+            /*grosor*/
+            text-align: center;
+            margin-top: 6rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            /*Se usa nuestras media quiery para cambiar algunos estilos definidos anteriormente y hacer un diseño más responsivo dependiendo del tamaño de la pantalla*/
+            .contenido {
+                margin-left: 0;
+                /*ELiminamos el margen de nuestro contenido*/
+                margin-right: 0;
+                font-size: 14px;
+                /*Reducimos el tamaño de la letra*/
+            }
+            a:link {
+                font-size: 14px;
+                /*Reducimos el tamaño de la letra en los links*/
+            }
+            /*Pagina Ubicación*/
+            .titulo {
+                text-align: center;
+                background-color: #7FFFD4;
+            }
+            .imagen:hover {
+                /* efecto para la imagen cuando pase el puntero pero cuando este en cierta medida */
+                border-radius: 50%;
+                /* forma circular*/
+                box-shadow: 0px 0px 15px 15px #000080;
+                /* borde y color*/
+                justify-content: space-evenly;
+                /*Distribuir items uniformemente*/
+            }
+        }
+        
+        .inicio {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 600px) {
+            /*Se usa nuestras media quiery para cambiar algunos estilos definidos anteriormente y hacer un diseño más responsivo dependiendo del tamaño de la pantalla*/
+            .contenido {
+                margin-left: 0;
+                /*ELiminamos el margen de nuestro contenido*/
+                margin-right: 0;
+                font-size: 14px;
+                /*Reducimos el tamaño de la letra*/
+                background-color: #E0FFFF;
+            }
+            a:link {
+                font-size: 14px;
+                /*Reducimos el tamaño de la letra en los links*/
+            }
+        }
